@@ -1,0 +1,358 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* ---------------------------- */
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Bruno Ace SC', cursive;
+    line-height: 2.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 67.5%;
+    margin: 0 auto;
+}
+
+nav {
+    padding-top: 4rem;
+    background-color: #000;
+    color: #D1D1D1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    font-size: 1.6rem;
+    width: 25%;
+    text-align: center;
+}
+
+nav li a {
+    color:#D1D1D1;
+}
+
+.banner {
+    background-color: #000;
+    padding: 7.2rem 0;
+}
+
+.banner .container {
+    display: flex;
+}
+
+.banner img {
+    width: 50%;
+}
+
+.banner .greet {
+    color: #fff;
+    font-size: 6.4rem;
+    line-height: 9.6rem;
+    margin: auto 0;
+    margin-left: 2.4rem;
+    width: 50%;
+}
+
+h1 {
+    font-size: 12.8rem;
+    line-height: 19.6rem;
+    color:#00FFA3;
+}
+
+.banner .greet .contactMe {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.banner .greet a {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    background: #fff;
+    padding: 1.2rem 2.4rem;
+    border-radius: 3.2rem;
+    color: #000;
+    transition: .2s;
+}
+
+.banner .greet a:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+.banner .greet a img {
+    width: 2.4rem;
+}
+
+.bg-img {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2023week2/background-img.png?raw=true);
+}
+
+.bg-img .container {
+    display: flex;
+    padding: 16rem 0;
+}
+
+.introdction {
+    color:#fff;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    width: 40%;
+}
+
+h2{
+    font-size: 6.4rem;
+    line-height: 9.6rem;
+}
+
+.introdction p {
+    margin: 3.6rem 0 3.2rem 0;
+}
+
+.introdction .mid {
+    margin: 0 1.6rem;
+}
+
+.photo {
+    width: 60%;
+}
+
+.photo img {
+    width: 40%;
+    height: 100%;
+}
+
+.photo .img-sm {
+    width: 28%;
+    height: 100%;
+    padding: 0 1.2rem;
+}
+
+.aboutMe .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 16rem 0;
+}
+
+.aboutMe ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+    justify-content:space-between ;
+    padding: 4.6rem 0;
+}
+
+h3{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.aboutMe li {
+    border: 1px solid #E3E3E3;
+    padding: 1.6rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    width: 46%;
+    box-shadow: .4rem .4rem .4rem 0 rgba(0, 0, 0, 0.08);
+}
+
+.aboutMe .aboutContent {
+    width: 40%;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+}
+
+.aboutMe .aboutContent p {
+    margin-top: 3.6rem;
+}
+
+.bg-linear {
+    background: linear-gradient(#050014,#01021E);
+    color: #fff;
+}
+
+.bg-linear .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 9.6rem 0; 
+}
+
+.bg-linear .contact {
+    width: 50%;
+}
+
+.bg-linear ul {
+    display: flex;
+    width: 40%;
+}
+
+.bg-linear li {
+    width: 33%;
+    border-radius: 4rem;
+    margin: 0 1rem;
+    overflow: hidden;
+    box-shadow: 0;
+}
+
+.bg-linear li:hover {
+    box-shadow: 0 0 1.6rem rgba(144, 148, 255, 0.9);
+    border-radius: 4rem;
+}
+
+.bg-linear li .scalePic {
+    transform: scale(1.1) translate(.3rem, .5rem);
+}
+
+.bg-linear li img {
+    width: 100%;
+}
+
+
+.myProject h2 {
+    padding-left: 43%;
+    margin-bottom: 1.2rem;
+}
+
+.myProject .container {
+    padding: 16rem 0;
+}
+
+.myProject .pictures {
+    display: flex;
+}
+
+.pictures img {
+    margin-right: 2.4rem;
+    width: 30%;
+}
+
+.pictures .picCombine {
+    width: 70%;
+}
+
+.pictures .hasLink {
+    display: flex;
+    margin-bottom: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.pictures .hasLink img{
+    width: auto;
+    height: auto;
+}
+
+.pictures .hasLink span {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.pictures .hasLink a {
+    color: #fff;
+    background: #000;
+    padding: 1.2rem 2.4rem;
+    border-radius: 3.2rem;
+    transition: .2s;
+}
+
+.pictures .hasLink a:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+.pictures .hasLink span img {
+    width: 2.4rem;
+    margin: 0;
+}
+
+.pictures .noLink {
+    margin: 0;
+    width: 100%;
+    display: flex;
+}
+
+.pictures .noLink img {
+    width: 40%;
+    height: auto;
+}
+
+.pictures .noLink .wide {
+    width: 60%;
+}
+
+footer {
+    background: #000;
+    padding: 4rem 0;
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    text-align: center;
+}
